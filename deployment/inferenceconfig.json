@@ -1,0 +1,30 @@
+{
+    "entryScript": "score.py",
+    "sourceDirectory": ".",
+    "environment": {
+        "docker": {
+            "arguments": [],
+            "baseDockerfile": null,
+            "baseImage": "mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04",
+            "enabled": false,
+            "sharedVolumes": true,
+            "shmSize": null
+        },
+        "environmentVariables": {
+            "EXAMPLE_ENV_VAR": ""
+        },
+        "name": "loan-uat-env",
+        "python": {
+            "baseCondaEnvironment": null,
+            "condaDependencies": {
+                "channels": [],
+                "dependencies": "conda_dependencies.yml",
+                "name": "loan_uat"
+            },
+            "condaDependenciesFile": null,
+            "interpreterPath": "python",
+            "userManagedDependencies": false
+        },
+        "version": "2"
+    }
+}
